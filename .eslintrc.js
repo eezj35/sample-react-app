@@ -37,6 +37,12 @@ module.exports = {
     },
     plugins: ['react', '@typescript-eslint', 'import'],
     rules: {
+        'prettier/prettier': [
+            'error',
+            {
+                'endOfLine': 'auto',
+            }
+        ],
         'no-unused-var': 'off',
         'no-var': 'error',
         'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'always' }],
